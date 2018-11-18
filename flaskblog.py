@@ -25,4 +25,8 @@ def home_page():
 
 @app.route('/about')
 def about_page():
-    return render_template('about.html', title='About')   
+    return render_template('about.html', title='About')
+
+#run the script directly in debug mode
+if __name__=='__main__':
+    app.run(debug=True)
